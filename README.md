@@ -88,4 +88,4 @@ npm run dev
 
 ## License
 
-Proprietary - Built for Automatiza.lat
+Proprietary - Built for Automatiza.lat# Deployed Mon Mar 23 18:02:16 UTC 2026
