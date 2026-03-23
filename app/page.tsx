@@ -3,16 +3,18 @@ import { Check, X, Zap, Calendar, Target, Rocket, Code, Cpu, Globe, Shield, Doll
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Navigation */}
-      <nav className="container mx-auto px-4 py-6">
-        <div className="flex items-center justify-between">
-          <div className="flex items-center space-x-2">
-            <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600" />
-            <span className="text-xl font-bold text-gray-900">Automatiza.lat</span>
+      {/* Navigation - Sticky */}
+      <nav className="sticky top-0 z-50 bg-white/95 backdrop-blur-sm border-b border-gray-100">
+        <div className="container mx-auto px-4 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-2">
+              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600" />
+              <span className="text-xl font-bold text-gray-900">Automatiza.lat</span>
+            </div>
+            <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors inline-block text-center">
+              Book a Fit Call
+            </a>
           </div>
-          <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors inline-block text-center">
-            Book a Fit Call
-          </a>
         </div>
       </nav>
 
