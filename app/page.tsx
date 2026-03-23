@@ -172,7 +172,7 @@ export default function Home() {
                       <div className="mr-3">
                         <X className="h-5 w-5" />
                       </div>
-                      <span>{item.text}</span>
+                      <span>{item}</span>
                     </li>
                   ))}
                 </ul>
