@@ -35,7 +35,7 @@ export default function Home() {
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
-              Book a 15-Min Fit Call
+              Book a 30-Min Fit Call
             </a>
             <button className="rounded-lg border border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
               See How It Works
@@ -360,7 +360,7 @@ export default function Home() {
           <div className="mx-auto max-w-2xl text-center">
             <h2 className="mb-6 text-3xl font-bold text-white">Ready to ship client work faster?</h2>
             <p className="mb-10 text-xl text-gray-400">
-              Book a 15‑minute fit call. We'll scope your first sprint together.
+              Book a 30‑minute fit call. We'll scope your first sprint together.
             </p>
             <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
               Book a Fit Call
