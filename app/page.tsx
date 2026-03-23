@@ -10,9 +10,9 @@ export default function Home() {
             <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600" />
             <span className="text-xl font-bold text-gray-900">Automatiza.lat</span>
           </div>
-          <button className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors">
+          <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors inline-block text-center">
             Book a Fit Call
-          </button>
+          </a>
         </div>
       </nav>
 
@@ -34,9 +34,9 @@ export default function Home() {
             Pause or cancel anytime.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <button className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+            <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
               Book a 15-Min Fit Call
-            </button>
+            </a>
             <button className="rounded-lg border border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
               See How It Works
             </button>
@@ -267,9 +267,9 @@ export default function Home() {
                     ))}
                   </ul>
                 </div>
-                <button className="w-full rounded-lg border border-blue-600 bg-transparent py-3 text-sm font-semibold text-blue-600 hover:bg-blue-50 transition-colors">
+                <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="w-full rounded-lg border border-blue-600 bg-transparent py-3 text-sm font-semibold text-blue-600 hover:bg-blue-50 transition-colors inline-block text-center">
                   Book a Scoping Call
-                </button>
+                </a>
               </div>
 
               {/* Option 2: Full Build Sprint */}
@@ -302,9 +302,9 @@ export default function Home() {
                     ))}
                   </ul>
                 </div>
-                <button className="w-full rounded-lg bg-blue-600 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+                <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="w-full rounded-lg bg-blue-600 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
                   Reserve a Sprint
-                </button>
+                </a>
               </div>
             </div>
           </div>
@@ -362,9 +362,9 @@ export default function Home() {
             <p className="mb-10 text-xl text-gray-400">
               Book a 15‑minute fit call. We'll scope your first sprint together.
             </p>
-            <button className="rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20">
+            <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
               Book a Fit Call
-            </button>
+            </a>
             <p className="mt-6 text-gray-500">
               No commitment. No sales pitch. Just a technical conversation.
             </p>
