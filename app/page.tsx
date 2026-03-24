@@ -8,7 +8,7 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4">
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2">
-              <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-600 to-indigo-600" />
+              <img src="/logo.png" alt="Automatiza.lat" className="h-8 w-8 object-contain" />
               <span className="text-xl font-bold text-gray-900">Automatiza.lat</span>
             </div>
             <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors inline-block text-center">
@@ -373,7 +373,7 @@ export default function Home() {
             <div className="mt-12 pt-8 border-t border-gray-800">
               <div className="flex flex-col items-center justify-between md:flex-row">
                 <div className="flex items-center space-x-2">
-                  <div className="h-8 w-8 rounded-lg bg-gradient-to-br from-blue-500 to-indigo-600" />
+                  <img src="/logo.png" alt="Automatiza.lat" className="h-8 w-8 object-contain" />
                   <span className="text-xl font-bold text-white">Automatiza.lat</span>
                 </div>
                 <div className="mt-4 text-gray-500 md:mt-0">
