@@ -1,4 +1,4 @@
-import { Check, X, Zap, Calendar, Target, Rocket, Code, Cpu, Globe, Shield, DollarSign, HelpCircle } from 'lucide-react'
+import { Check, X, Zap, Calendar, Target, Rocket, Code, Cpu, Globe, Shield, DollarSign, HelpCircle, Home, Building2, ShieldCheck, MessageSquare, Clock, FileText, Bell } from 'lucide-react'
 
 export default function Home() {
   return (
@@ -11,9 +11,17 @@ export default function Home() {
               <img src="/logo.png" alt="Automatiza.lat" className="h-8 w-8 object-contain" />
               <span className="text-xl font-bold text-gray-900">Automatiza.lat</span>
             </div>
-            <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors inline-block text-center">
-              Book a Fit Call
-            </a>
+            <div className="flex items-center space-x-6">
+              <a href="/real-estate" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Real Estate
+              </a>
+              <a href="/insurance" className="text-gray-700 hover:text-blue-600 transition-colors font-medium">
+                Insurance
+              </a>
+              <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-6 py-2.5 font-semibold text-white hover:bg-blue-700 transition-colors inline-block text-center">
+                Book a Fit Call
+              </a>
+            </div>
           </div>
         </div>
       </nav>
@@ -23,63 +31,100 @@ export default function Home() {
         <div className="mx-auto max-w-4xl text-center">
           <div className="mb-6 inline-flex items-center rounded-full bg-blue-50 border border-blue-100 px-4 py-1.5">
             <Zap className="mr-2 h-4 w-4 text-blue-600" />
-            <span className="text-sm font-medium text-blue-800">No hourly billing. No retainers.</span>
+            <span className="text-sm font-medium text-blue-800">AI + No-Code Workflow Automation</span>
           </div>
           <h1 className="mb-6 text-5xl font-bold leading-tight text-gray-900 md:text-6xl">
-            A senior dev team for your marketing agency.
-            <span className="block text-blue-600 mt-2">
-              $1,000 flat-rate weekly sprints.
+            I build automation systems that run your business while you sleep.
+            <span className="block text-blue-600 mt-2 text-4xl md:text-5xl">
+              $1,000 Setup + $199/month Retainer
             </span>
           </h1>
           <p className="mb-10 text-xl text-gray-600">
-            Custom integrations, web apps, and workflows delivered in 5-day sprints.
-            Pause or cancel anytime.
+            Stop doing work a computer should do. We automate repetitive tasks so you can focus on growth.
           </p>
           <div className="flex flex-col items-center justify-center gap-4 sm:flex-row">
             <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-8 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
               Book a 30-Min Fit Call
             </a>
-            <button className="rounded-lg border border-gray-300 bg-white px-8 py-4 text-lg font-semibold text-gray-700 hover:bg-gray-50 transition-colors">
-              See How It Works
-            </button>
+            <div className="text-gray-600">
+              Specializing in <span className="font-semibold text-blue-600">Real Estate</span> and <span className="font-semibold text-blue-600">Insurance</span> agents
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 2: The Pain / Anti-Status Quo - 3-column problem statement */}
+      {/* Section 2: Specializations - Real Estate & Insurance */}
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-4xl">
+          <div className="mx-auto max-w-6xl">
             <h2 className="mb-12 text-center text-3xl font-bold text-gray-900">
-              The agency dev problem, solved.
+              We specialize in serving Real Estate and Insurance professionals
             </h2>
-            <div className="grid gap-8 md:grid-cols-3">
-              <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-red-50">
-                  <X className="h-6 w-6 text-red-500" />
+            <div className="grid gap-8 md:grid-cols-2">
+              {/* Real Estate Card */}
+              <div className="group rounded-2xl bg-white p-8 shadow-lg border border-gray-100 hover:border-blue-300 transition-all hover:shadow-xl">
+                <div className="mb-6 flex items-center">
+                  <div className="mr-4 rounded-xl bg-blue-50 p-3">
+                    <Home className="h-8 w-8 text-blue-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Real Estate Agents</h3>
+                    <p className="text-blue-600 font-medium">Speed to Lead Automation</p>
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Freelancers are flaky</h3>
-                <p className="text-gray-600">
-                  Ghosting, missed deadlines, inconsistent quality. You're managing people instead of projects.
+                <p className="mb-6 text-gray-600">
+                  Never lose a commission again. Automate instant responses to Zillow/Facebook leads while you're driving or at showings.
                 </p>
+                <ul className="space-y-4 mb-8">
+                  {[
+                    { icon: <MessageSquare className="h-5 w-5 text-blue-600" />, text: 'Instant SMS/email responses to new leads' },
+                    { icon: <Clock className="h-5 w-5 text-blue-600" />, text: '24/7 lead qualification & scheduling' },
+                    { icon: <Calendar className="h-5 w-5 text-blue-600" />, text: 'Automated showing coordination' },
+                    { icon: <Bell className="h-5 w-5 text-blue-600" />, text: 'Smart follow-up sequences' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center">
+                      <div className="mr-3">{item.icon}</div>
+                      <span className="text-gray-700">{item.text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href="/real-estate" className="inline-flex items-center text-blue-600 font-semibold hover:text-blue-700">
+                  Learn more about Real Estate automation
+                  <Rocket className="ml-2 h-4 w-4" />
+                </a>
               </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-amber-50">
-                  <DollarSign className="h-6 w-6 text-amber-500" />
+
+              {/* Insurance Card */}
+              <div className="group rounded-2xl bg-white p-8 shadow-lg border border-gray-100 hover:border-green-300 transition-all hover:shadow-xl">
+                <div className="mb-6 flex items-center">
+                  <div className="mr-4 rounded-xl bg-green-50 p-3">
+                    <ShieldCheck className="h-8 w-8 text-green-600" />
+                  </div>
+                  <div>
+                    <h3 className="text-2xl font-bold text-gray-900">Insurance Agents/Brokers</h3>
+                    <p className="text-green-600 font-medium">Retention & Renewals Automation</p>
+                  </div>
                 </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Hourly billing kills margin</h3>
-                <p className="text-gray-600">
-                  Scope creep turns $500 projects into $5,000 invoices. You can't price confidently for clients.
+                <p className="mb-6 text-gray-600">
+                  Stop chasing paperwork and missed renewals. Automate quote follow-ups, document collection, and renewal reminders.
                 </p>
-              </div>
-              <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
-                <div className="mb-4 flex h-12 w-12 items-center justify-center rounded-lg bg-blue-50">
-                  <Shield className="h-6 w-6 text-blue-600" />
-                </div>
-                <h3 className="mb-3 text-xl font-semibold text-gray-900">Dev agencies are too expensive</h3>
-                <p className="text-gray-600">
-                  $15k/month minimums, rigid contracts, and junior teams doing the actual work.
-                </p>
+                <ul className="space-y-4 mb-8">
+                  {[
+                    { icon: <FileText className="h-5 w-5 text-green-600" />, text: 'Automated document collection & reminders' },
+                    { icon: <Bell className="h-5 w-5 text-green-600" />, text: 'Renewal notification systems' },
+                    { icon: <MessageSquare className="h-5 w-5 text-green-600" />, text: 'Quote follow-up sequences' },
+                    { icon: <Shield className="h-5 w-5 text-green-600" />, text: 'Client retention workflows' },
+                  ].map((item, i) => (
+                    <li key={i} className="flex items-center">
+                      <div className="mr-3">{item.icon}</div>
+                      <span className="text-gray-700">{item.text}</span>
+                    </li>
+                  ))}
+                </ul>
+                <a href="/insurance" className="inline-flex items-center text-green-600 font-semibold hover:text-green-700">
+                  Learn more about Insurance automation
+                  <Rocket className="ml-2 h-4 w-4" />
+                </a>
               </div>
             </div>
           </div>
@@ -91,7 +136,7 @@ export default function Home() {
         <div className="mx-auto max-w-4xl">
           <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">How it works</h2>
           <p className="mb-12 text-center text-xl text-gray-600">
-            Simple, predictable, and designed for agencies.
+            Simple, predictable automation setup
           </p>
           <div className="grid gap-8 md:grid-cols-3">
             <div className="relative text-center">
@@ -99,9 +144,9 @@ export default function Home() {
               <div className="relative mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-blue-600 text-white text-2xl font-bold shadow-lg shadow-blue-600/20">
                 1
               </div>
-              <h3 className="mb-3 text-xl font-semibold text-gray-900">Scope the sprint</h3>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Discovery & Setup</h3>
               <p className="text-gray-600">
-                We define exactly what gets built in 5 days. No surprises, no scope creep.
+                We analyze your workflows and design the perfect automation system. One-time $1,000 setup fee.
               </p>
             </div>
             <div className="relative text-center">
@@ -109,44 +154,44 @@ export default function Home() {
               <div className="relative mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-indigo-600 text-white text-2xl font-bold shadow-lg shadow-indigo-600/20">
                 2
               </div>
-              <h3 className="mb-3 text-xl font-semibold text-gray-900">We build for 5 days</h3>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Build & Deploy</h3>
               <p className="text-gray-600">
-                Our senior team works exclusively on your project. Daily updates, no distractions.
+                We build your automation system using AI + no-code tools. Your business starts running on autopilot.
               </p>
             </div>
             <div className="text-center">
               <div className="relative mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-violet-600 text-white text-2xl font-bold shadow-lg shadow-violet-600/20">
                 3
               </div>
-              <h3 className="mb-3 text-xl font-semibold text-gray-900">Delivered</h3>
+              <h3 className="mb-3 text-xl font-semibold text-gray-900">Ongoing Support</h3>
               <p className="text-gray-600">
-                Working software, deployed and documented. Ready for your client presentation.
+                $199/month retainer for maintenance, updates, and adding new automations as your business grows.
               </p>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Section 4: Scope - What we do vs What we don't */}
+      {/* Section 4: What We Automate */}
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-12 text-center text-3xl font-bold text-gray-900">What we do (and don't)</h2>
+            <h2 className="mb-12 text-center text-3xl font-bold text-gray-900">What we automate</h2>
             <div className="grid gap-8 md:grid-cols-2">
               <div className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
                 <div className="mb-6 flex items-center">
                   <div className="mr-4 rounded-lg bg-green-50 p-2">
                     <Check className="h-5 w-5 text-green-600" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">What we do</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">Our Specialties</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
-                    { icon: <Code className="h-5 w-5 text-blue-600" />, text: 'Full-stack web applications' },
-                    { icon: <Cpu className="h-5 w-5 text-blue-600" />, text: 'Custom APIs & backend logic' },
-                    { icon: <Zap className="h-5 w-5 text-amber-500" />, text: 'Zapier/Make automations' },
-                    { icon: <Globe className="h-5 w-5 text-blue-600" />, text: 'Custom integrations (CRM, CMS, etc.)' },
-                    { icon: <Target className="h-5 w-5 text-red-500" />, text: 'Marketing workflow automation' },
+                    { icon: <MessageSquare className="h-5 w-5 text-blue-600" />, text: 'Lead response & qualification' },
+                    { icon: <Calendar className="h-5 w-5 text-blue-600" />, text: 'Appointment scheduling & reminders' },
+                    { icon: <FileText className="h-5 w-5 text-blue-600" />, text: 'Document collection & processing' },
+                    { icon: <Bell className="h-5 w-5 text-blue-600" />, text: 'Renewal & follow-up sequences' },
+                    { icon: <Zap className="h-5 w-5 text-amber-500" />, text: 'CRM & marketing automation' },
                   ].map((item, i) => (
                     <li key={i} className="flex items-center">
                       <div className="mr-3">{item.icon}</div>
@@ -160,15 +205,15 @@ export default function Home() {
                   <div className="mr-4 rounded-lg bg-red-50 p-2">
                     <X className="h-5 w-5 text-red-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">What we don't</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">What we don't do</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
-                    'Native iOS/Android mobile apps',
-                    'Blockchain/crypto projects',
-                    'AI model training',
-                    'Legacy system maintenance',
-                    '24/7 support contracts',
+                    'Custom software development',
+                    'Mobile app development',
+                    'Website design & development',
+                    'Social media management',
+                    'Traditional marketing campaigns',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center text-gray-500">
                       <div className="mr-3">
@@ -190,37 +235,38 @@ export default function Home() {
           <div className="overflow-hidden rounded-2xl bg-white shadow-lg border border-gray-100">
             <div className="grid md:grid-cols-2">
               <div className="p-8 md:p-12">
-                <h2 className="mb-6 text-3xl font-bold text-gray-900">Built by an ex‑PM who knows deadlines</h2>
+                <h2 className="mb-6 text-3xl font-bold text-gray-900">Workflow Automation Consultant</h2>
                 <div className="mb-6 space-y-4">
                   <p className="text-gray-600">
-                    I'm Leonardo Diaz. For 7 years, I was the Product Manager shipping features for millions of users.
+                    I'm Leonardo Diaz. For 7 years, I was a Product Manager shipping features for millions of users.
                   </p>
                   <p className="text-gray-600">
-                    I've seen every way a project can go wrong—scope creep, miscommunication, technical debt.
+                    I've seen how repetitive tasks drain productivity and kill growth. That's why I now focus exclusively on workflow automation.
                   </p>
                   <p className="text-gray-600">
-                    Automatiza.lat is built on one principle: <strong className="text-gray-900">predictable delivery</strong>. As a technical PM who has overseen complex software architectures, I know how to scope, sequence, and hit deadlines every single week.
+                    I combine AI tools with no-code platforms to create systems that work 24/7. My approach is <strong className="text-gray-900">tool-agnostic</strong>—I use whatever gets the job done fastest and most reliably.
                   </p>
                 </div>
                 <div className="flex items-center">
                   <div className="mr-4 h-12 w-12 rounded-full bg-gradient-to-r from-blue-500 to-indigo-600" />
                   <div>
                     <div className="font-semibold text-gray-900">Leonardo Diaz</div>
-                    <div className="text-sm text-gray-500">Founder, ex‑Product Manager (7 years)</div>
+                    <div className="text-sm text-gray-500">Workflow Automation Consultant</div>
                   </div>
                 </div>
               </div>
               <div className="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 md:p-12">
                 <div className="mb-6">
                   <div className="mb-2 text-sm font-semibold text-blue-600 uppercase tracking-wider">Why This Works</div>
-                  <h3 className="text-2xl font-bold text-gray-900">Product thinking, not just code</h3>
+                  <h3 className="text-2xl font-bold text-gray-900">Process thinking, not just tools</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
-                    'We scope like PMs: outcomes, not hours',
-                    'We build like senior engineers: clean, tested, documented',
-                    'We communicate like partners: daily updates, zero surprises',
-                    'We deliver like clockwork: 5-day sprints, every time',
+                    'We analyze your actual workflows first',
+                    'We choose the right tools for your specific needs',
+                    'We build systems that require minimal maintenance',
+                    'We focus on ROI: time saved vs. cost',
+                    'We provide ongoing support as your business evolves',
                   ].map((item, i) => (
                     <li key={i} className="flex items-center">
                       <Check className="mr-3 h-5 w-5 text-blue-600" />
@@ -234,33 +280,34 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 6: Pricing - Two clear options */}
+      {/* Section 6: Pricing - Clear pricing structure */}
       <section className="bg-gray-50 py-20">
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
-            <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">Simple, low-risk pricing.</h2>
+            <h2 className="mb-4 text-center text-3xl font-bold text-gray-900">Simple, transparent pricing</h2>
             <p className="mb-12 text-center text-xl text-gray-600">
-              Zero retainers. 50% down to start, 50% on delivery.
+              One-time setup + monthly retainer. No hourly billing, no surprises.
             </p>
             <div className="grid gap-8 md:grid-cols-2">
-              {/* Option 1: Scoping Sprint */}
+              {/* Setup Package */}
               <div className="relative flex flex-col overflow-hidden rounded-2xl bg-white p-8 shadow-sm border border-gray-200 hover:border-blue-300 transition-colors">
                 <div className="mb-8 flex-grow">
-                  <div className="mb-2 text-sm font-semibold text-blue-600 uppercase tracking-wider">The Foot-in-the-Door</div>
-                  <h3 className="mb-4 text-2xl font-bold text-gray-900">Scoping Sprint</h3>
+                  <div className="mb-2 text-sm font-semibold text-blue-600 uppercase tracking-wider">Initial Investment</div>
+                  <h3 className="mb-4 text-2xl font-bold text-gray-900">Setup Package</h3>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-bold text-gray-900">$250</span>
-                    <span className="ml-2 text-gray-500">/ 2 days</span>
+                    <span className="text-4xl font-bold text-gray-900">$1,000</span>
+                    <span className="ml-2 text-gray-500">one-time</span>
                   </div>
                   <p className="mb-6 text-gray-600">
-                    Perfect for skeptical clients or complex builds. We design the architecture before you commit to the full build.
+                    Complete analysis of your workflows and implementation of your core automation system.
                   </p>
                   <ul className="space-y-4">
                     {[
-                      'Complete technical architecture',
-                      'Database & API planning',
-                      'Exact timeline & scope definition',
-                      'Credited toward the full build sprint',
+                      'Workflow analysis & mapping',
+                      'Tool selection & setup',
+                      'Core automation implementation',
+                      'Testing & deployment',
+                      'Training & documentation',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start">
                         <Check className="mr-3 h-5 w-5 shrink-0 text-blue-600" />
@@ -270,32 +317,32 @@ export default function Home() {
                   </ul>
                 </div>
                 <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="w-full rounded-lg border border-blue-600 bg-transparent py-3 text-sm font-semibold text-blue-600 hover:bg-blue-50 transition-colors inline-block text-center">
-                  Book a Scoping Call
+                  Book Setup Call
                 </a>
               </div>
 
-              {/* Option 2: Full Build Sprint */}
+              {/* Monthly Retainer */}
               <div className="relative flex flex-col overflow-hidden rounded-2xl bg-white p-8 shadow-lg border-2 border-blue-600">
                 <div className="absolute right-0 top-0 rounded-bl-lg bg-blue-600 px-4 py-1 text-xs font-semibold text-white uppercase tracking-wider">
                   Most Popular
                 </div>
                 <div className="mb-8 flex-grow">
-                  <div className="mb-2 text-sm font-semibold text-blue-600 uppercase tracking-wider">The Standard</div>
-                  <h3 className="mb-4 text-2xl font-bold text-gray-900">Full Build Sprint</h3>
+                  <div className="mb-2 text-sm font-semibold text-blue-600 uppercase tracking-wider">Ongoing Support</div>
+                  <h3 className="mb-4 text-2xl font-bold text-gray-900">Monthly Retainer</h3>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-bold text-gray-900">$1,000</span>
-                    <span className="ml-2 text-gray-500">/ 5 days</span>
+                    <span className="text-4xl font-bold text-gray-900">$199</span>
+                    <span className="ml-2 text-gray-500">/ month</span>
                   </div>
                   <p className="mb-6 text-gray-600">
-                    A dedicated senior engineer for one week. You pay 50% to lock the slot, and 50% when the code is delivered.
+                    Keep your automation system running smoothly and add new workflows as your business grows.
                   </p>
                   <ul className="space-y-4">
                     {[
-                      '5 business days of senior dev time',
-                      'Deployed, working software',
-                      'Full documentation & handoff',
-                      '$500 upfront, $500 on delivery',
-                      'Zero retainers or hourly BS',
+                      'System monitoring & maintenance',
+                      'Monthly optimization updates',
+                      'Add new automation workflows',
+                      'Priority support & troubleshooting',
+                      'Tool updates & migrations',
                     ].map((item, i) => (
                       <li key={i} className="flex items-start">
                         <Check className="mr-3 h-5 w-5 shrink-0 text-blue-600" />
@@ -305,85 +352,10 @@ export default function Home() {
                   </ul>
                 </div>
                 <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="w-full rounded-lg bg-blue-600 py-3 text-sm font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
-                  Reserve a Sprint
+                  Start with Setup + Retainer
                 </a>
               </div>
             </div>
           </div>
         </div>
       </section>
-
-      {/* Section 7: FAQ - Common questions answered */}
-      <section className="container mx-auto px-4 py-20">
-        <div className="mx-auto max-w-3xl">
-          <h2 className="mb-12 text-center text-3xl font-bold text-gray-900">Frequently asked questions</h2>
-          <div className="space-y-6">
-            {[
-              {
-                q: 'What exactly is a "sprint"?',
-                a: 'A sprint is 5 business days of focused development on one project. We scope it together on Monday, build Tuesday–Friday, and deliver by EOD Friday.',
-              },
-              {
-                q: 'What if my project takes longer than a week?',
-                a: 'We break it into multiple sprints. Each sprint delivers working, deployable software. You can pause between sprints if needed.',
-              },
-              {
-                q: 'Who are the developers?',
-                a: 'Our team consists of senior full‑stack engineers with 5+ years experience. All communication goes through me (Leo) as your single point of contact.',
-              },
-              {
-                q: 'What if I need changes after delivery?',
-                a: 'Minor fixes within 48 hours of delivery are included. For additional work, we scope a new sprint.',
-              },
-              {
-                q: 'Can I use this for client work?',
-                a: 'Absolutely. Most of our agency clients white‑label our work. We deliver the code, you present it to your client.',
-              },
-              {
-                q: 'What if I want to stop?',
-                a: 'No contracts. Pause or cancel anytime. We recommend finishing your current sprint for clean handoff.',
-              },
-            ].map((faq, i) => (
-              <div key={i} className="rounded-xl bg-white p-6 shadow-sm border border-gray-100">
-                <h3 className="mb-3 flex items-center text-xl font-semibold text-gray-900">
-                  <HelpCircle className="mr-3 h-5 w-5 text-blue-600" />
-                  {faq.q}
-                </h3>
-                <p className="text-gray-600">{faq.a}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Footer CTA */}
-      <footer className="bg-gray-900 py-20">
-        <div className="container mx-auto px-4">
-          <div className="mx-auto max-w-2xl text-center">
-            <h2 className="mb-6 text-3xl font-bold text-white">Ready to ship client work faster?</h2>
-            <p className="mb-10 text-xl text-gray-400">
-              Book a 30‑minute fit call. We'll scope your first sprint together.
-            </p>
-            <a href="https://calendar.app.google/tz9DJg2vrwAvDCWm8" target="_blank" rel="noopener noreferrer" className="rounded-lg bg-blue-600 px-10 py-4 text-lg font-semibold text-white hover:bg-blue-700 transition-colors shadow-lg shadow-blue-600/20 inline-block text-center">
-              Book a Fit Call
-            </a>
-            <p className="mt-6 text-gray-500">
-              No commitment. No sales pitch. Just a technical conversation.
-            </p>
-            <div className="mt-12 pt-8 border-t border-gray-800">
-              <div className="flex flex-col items-center justify-between md:flex-row">
-                <div className="flex items-center space-x-2">
-                  <img src="/logo.png" alt="Automatiza.lat" className="h-8 w-8 object-contain" />
-                  <span className="text-xl font-bold text-white">Automatiza.lat</span>
-                </div>
-                <div className="mt-4 text-gray-500 md:mt-0">
-                  © {new Date().getFullYear()} Senior dev team for marketing agencies.
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </footer>
-    </main>
-  )
-}
