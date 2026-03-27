@@ -1,6 +1,6 @@
 import { Check, X, Zap, Calendar, Target, Rocket, Code, Cpu, Globe, Shield, DollarSign, HelpCircle, Home, Building2, ShieldCheck, MessageSquare, Clock, FileText, Bell } from 'lucide-react'
 
-export default function Home() {
+export default function HomePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* Navigation - Sticky */}
