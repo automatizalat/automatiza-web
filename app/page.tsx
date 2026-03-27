@@ -73,7 +73,7 @@ export default function Home() {
                   </div>
                 </div>
                 <p className="mb-6 text-gray-600">
-                  Never lose a commission again. Automate instant responses to Zillow/Facebook leads while you're driving or at showings.
+                  Never lose a commission again. Automate instant responses to Zillow/Facebook leads while you are driving or at showings.
                 </p>
                 <ul className="space-y-4 mb-8">
                   {[
@@ -205,7 +205,7 @@ export default function Home() {
                   <div className="mr-4 rounded-lg bg-red-50 p-2">
                     <X className="h-5 w-5 text-red-500" />
                   </div>
-                  <h3 className="text-xl font-semibold text-gray-900">What we don't do</h3>
+                  <h3 className="text-xl font-semibold text-gray-900">What we do not do</h3>
                 </div>
                 <ul className="space-y-4">
                   {[
@@ -238,10 +238,10 @@ export default function Home() {
                 <h2 className="mb-6 text-3xl font-bold text-gray-900">Workflow Automation Consultant</h2>
                 <div className="mb-6 space-y-4">
                   <p className="text-gray-600">
-                    I'm Leonardo Diaz. For 7 years, I was a Product Manager shipping features for millions of users.
+                    I am Leonardo Diaz. For 7 years, I was a Product Manager shipping features for millions of users.
                   </p>
                   <p className="text-gray-600">
-                    I've seen how repetitive tasks drain productivity and kill growth. That's why I now focus exclusively on workflow automation.
+                    I have seen how repetitive tasks drain productivity and kill growth. That is why I now focus exclusively on workflow automation.
                   </p>
                   <p className="text-gray-600">
                     I combine AI tools with no-code platforms to create systems that work 24/7. My approach is <strong className="text-gray-900">tool-agnostic</strong>—I use whatever gets the job done fastest and most reliably.
