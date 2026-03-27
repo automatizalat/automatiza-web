@@ -50,7 +50,7 @@ export default function InsurancePage() {
                 Book an Insurance Automation Call
               </a>
               <div className="text-gray-600">
-                <span className="font-semibold text-green-600">$1,000 Setup</span> + <span className="font-semibold text-green-600">$100/month</span>
+                <span className="font-semibold text-green-600">$1,000 Setup</span> + <span className="font-semibold text-green-600">$99/month</span>
               </div>
             </div>
           </div>
@@ -282,7 +282,7 @@ export default function InsurancePage() {
             Book Insurance Automation Call
           </a>
           <p className="mt-6 text-gray-500">
-            $1,000 one-time setup • $100/month retainer • No long-term contracts
+            $1,000 one-time setup • $99/month retainer • No long-term contracts
           </p>
         </div>
       </section>

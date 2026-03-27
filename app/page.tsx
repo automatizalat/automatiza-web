@@ -36,7 +36,7 @@ export default function HomePage() {
           <h1 className="mb-6 text-5xl font-bold leading-tight text-gray-900 md:text-6xl">
             I build automation systems that run your business while you sleep.
             <span className="block text-blue-600 mt-2 text-4xl md:text-5xl">
-              $1,000 Setup + $100/month Retainer
+              $1,000 Setup + $99/month Retainer
             </span>
           </h1>
           <p className="mb-10 text-xl text-gray-600">
@@ -165,7 +165,7 @@ export default function HomePage() {
               </div>
               <h3 className="mb-3 text-xl font-semibold text-gray-900">Ongoing Support</h3>
               <p className="text-gray-600">
-                $100/month retainer for maintenance, updates, and adding new automations as your business grows.
+                $99/month retainer for maintenance, updates, and adding new automations as your business grows.
               </p>
             </div>
           </div>
@@ -330,7 +330,7 @@ export default function HomePage() {
                   <div className="mb-2 text-sm font-semibold text-blue-600 uppercase tracking-wider">Ongoing Support</div>
                   <h3 className="mb-4 text-2xl font-bold text-gray-900">Monthly Retainer</h3>
                   <div className="flex items-baseline mb-6">
-                    <span className="text-4xl font-bold text-gray-900">$100</span>
+                    <span className="text-4xl font-bold text-gray-900">$99</span>
                     <span className="ml-2 text-gray-500">/ month</span>
                   </div>
                   <p className="mb-6 text-gray-600">

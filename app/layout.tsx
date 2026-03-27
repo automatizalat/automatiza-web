@@ -7,7 +7,7 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: 'Automatiza.lat - Workflow Automation Consultant',
-  description: 'I build automation systems that run your business while you sleep. $1,000 Setup + $100/month Retainer. Specializing in Real Estate and Insurance agents.',
+  description: 'I build automation systems that run your business while you sleep. $1,000 Setup + $99/month Retainer. Specializing in Real Estate and Insurance agents.',
 }
 
 export default function RootLayout({
